@@ -40,7 +40,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 
 def NOTIFIED_ADD_CONTACT(op):
     try:
-        sendMessage(op.param1, client.getContact(op.param1).displayName + "Thanks for add, instagram @mkhadaffy18")
+        sendMessage(op.param1, client.getContact(op.param1).displayName + "Thanks for add, IG:Ponpakapapoi_")
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_ADD_CONTACT\n\n")
@@ -130,7 +130,7 @@ def SEND_MESSAGE(op):
                     print "ok"
                     _name = msg.text.replace("Mulai","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Author by Mkhadaffy")
+                    sendMessage(msg.to,"Author by Shuichi IG:ponpakapapoi_")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -152,12 +152,14 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to, "Tunggu sebentar...")
                     elapsed_time = time.time() - start
                     sendMessage(msg.to, "%sseconds" % (elapsed_time))
-                    sendMessage(msg.to,"Bot By MKHADAFFY")
+                    sendMessage(msg.to,"Bot By Shuichu")
 #-------------------------------------------------------------
                 if msg.text == "Spam":
                     sendMessage(msg.to,"3")
                     sendMessage(msg.to,"2")
                     sendMessage(msg.to,"1")
+		
+		
 #-------------------------------------------------------------
                 if msg.text == "Tag all":
 		      group = client.getGroup(msg.to)
